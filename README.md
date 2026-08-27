@@ -32,6 +32,21 @@ pip install bme280 --break-system-packages
 bash requirements.txt
 ```
 
+### I2Cの有効化
+
+BME280センサーを使う `2-sensor` と `4-udp/42-sensor` では，Raspberry Pi 本体のI2Cインターフェースを有効にしておく必要があります。初期状態では無効になっているため，以下の手順で有効化してください。
+
+1. ターミナルで `sudo raspi-config` を実行する
+2. `3 Interface Options` を選択する
+3. `I5 I2C` を選択する（raspi-config のバージョンによっては `I4 I2C` など番号が異なる場合があります）
+4. 「Would you like the ARM I2C interface to be enabled?」に対して `<Yes>` を選択する
+5. 「The ARM I2C interface is enabled」と表示されたら `<Ok>` を選択する
+6. `<Finish>` を選択して raspi-config を終了する
+
+#### 手順2: 再起動する
+
+設定を反映するために再起
+
 ## 1-led — LEDの点灯時間計測
 
 [1-led/led_activation_log.py](1-led/led_activation_log.py)
