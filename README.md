@@ -12,6 +12,8 @@ Raspberry Pi の GPIO / センサー / UDP通信の学習用サンプルコー�
 `requirements.txt` には pip パッケージ名ではなく、実行すべきコマンドがそのまま書かれています。
 
 ```
+sudo apt install python3-gpiozero
+sudo apt install python3-lgpio
 sudo apt install python3-smbus
 pip install bme280 --break-system-packages
 ```
