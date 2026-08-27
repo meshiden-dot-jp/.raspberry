@@ -43,10 +43,6 @@ BME280センサーを使う `2-sensor` と `4-udp/42-sensor` では，Raspberry 
 5. 「The ARM I2C interface is enabled」と表示されたら `<Ok>` を選択する
 6. `<Finish>` を選択して raspi-config を終了する
 
-#### 手順2: 再起動する
-
-設定を反映するために再起
-
 ## 1-led — LEDの点灯時間計測
 
 [1-led/led_activation_log.py](1-led/led_activation_log.py)
