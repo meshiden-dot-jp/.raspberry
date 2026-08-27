@@ -1,5 +1,5 @@
-sudo apt install python3-smbus
-pip install bme280 --break-system-packages
 sudo apt install python3-gpiozero
 sudo apt install python3-lgpio
+sudo apt install python3-smbus
 sudo raspi-config nonint do_i2c 0
+pip install bme280 --break-system-packages
