@@ -1,2 +1,4 @@
 sudo apt install python3-smbus
 pip install bme280 --break-system-packages
+sudo apt install python3-gpiozero
+sudo apt install python3-lgpio

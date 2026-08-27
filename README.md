@@ -16,24 +16,18 @@ sudo apt install python3-smbus
 pip install bme280 --break-system-packages
 ```
 
-BME280気温・湿度・気圧センサーを使う `2-sensor` と `4-udp/42-sensor` で必要になるライブラリです。
+`1-led` (gpiozero) と `3-moter` (lgpio) で使うライブラリと，ME280気温・湿度・気圧センサーを使う `2-sensor` と `4-udp/42-sensor` で必要になるライブラリです。
 以下のいずれかの方法でセットアップしてください。
 
 ```bash
 # 1行ずつ実行する場合
+sudo apt install python3-gpiozero
+sudo apt install python3-lgpio
 sudo apt install python3-smbus
 pip install bme280 --break-system-packages
 
 # まとめて実行する場合
 bash requirements.txt
-```
-
-なお `1-led` (gpiozero) と `3-moter` (lgpio) で使うライブラリは requirements.txt に含まれていません。
-未インストールの場合は以下を実行してください。
-
-```bash
-sudo apt install python3-gpiozero
-sudo apt install python3-lgpio
 ```
 
 ## 1-led — LEDの点灯時間計測
