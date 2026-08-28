@@ -34,6 +34,8 @@ pip install bme280 --break-system-packages
 bash requirements.txt
 ```
 
+![servomotor](servomotor.jpg)
+
 ## 1-led — LEDの点灯時間計測
 
 [1-led/led_activation_log.py](1-led/led_activation_log.py)
