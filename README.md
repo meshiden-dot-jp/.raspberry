@@ -34,6 +34,7 @@ pip install bme280 --break-system-packages
 bash requirements.txt
 ```
 
+サーボモーターは次のように接続してください．
 ![servomotor](servomotor.jpg)
 
 ## 1-led — LEDの点灯時間計測
